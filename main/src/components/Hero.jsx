@@ -17,120 +17,87 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-cyan/10 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto px-6 py-20 relative z-10">
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="flex-1 text-center md:text-left">
-            <div
-              className={`transition-all duration-700 ${
-                mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+      <div className="max-w-3xl mx-auto px-6 py-20 relative z-10 text-center">
+        <div
+          className={`transition-all duration-700 ${
+            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <span className="inline-block px-4 py-1.5 rounded-full bg-accent-primary/10 text-accent-primary text-sm font-medium mb-6 border border-accent-primary/20">
+            👋 Welcome to my portfolio
+          </span>
+
+          <h1 className="font-display text-5xl md:text-7xl font-bold mb-4">
+            Hi, I'm{" "}
+            <span className="gradient-text">Vignesh</span>
+          </h1>
+
+          <p className="text-xl md:text-2xl text-text-secondary mb-4 font-light">
+            Frontend Developer
+          </p>
+
+          <p className="text-text-muted max-w-lg mx-auto mb-8">
+            Passionate about building beautiful, responsive web applications 
+            with modern technologies. Turning ideas into elegant digital experiences.
+          </p>
+
+          <div className="flex flex-wrap gap-4 justify-center">
+            <a
+              href="#contact"
+              className="px-8 py-3 bg-accent-primary hover:bg-accent-primary/90 text-white rounded-xl font-medium transition-all duration-200 hover:shadow-lg hover:shadow-accent-primary/25"
             >
-              <span className="inline-block px-4 py-1.5 rounded-full bg-accent-primary/10 text-accent-primary text-sm font-medium mb-6 border border-accent-primary/20">
-                👋 Welcome to my portfolio
-              </span>
-
-              <h1 className="font-display text-5xl md:text-7xl font-bold mb-4">
-                Hi, I'm{" "}
-                <span className="gradient-text">Vignesh</span>
-              </h1>
-
-              <p className="text-xl md:text-2xl text-text-secondary mb-4 font-light">
-                Frontend Developer
-              </p>
-
-              <p className="text-text-muted max-w-md mb-8 mx-auto md:mx-0">
-                Passionate about building beautiful, responsive web applications 
-                with modern technologies. Turning ideas into elegant digital experiences.
-              </p>
-
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <a
-                  href="#contact"
-                  className="px-8 py-3 bg-accent-primary hover:bg-accent-primary/90 text-white rounded-xl font-medium transition-all duration-200 hover:shadow-lg hover:shadow-accent-primary/25"
-                >
-                  Get in touch
-                </a>
-                <a
-                  href="#about"
-                  className="px-8 py-3 glass rounded-xl font-medium text-text-primary hover:text-accent-cyan transition-all duration-200"
-                >
-                  Learn more
-                </a>
-              </div>
-
-              <div className="flex gap-6 mt-10 justify-center md:justify-start">
-                {[
-                  {
-                    icon: (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z M4 6a2 2 0 100-4 2 2 0 000 4z"
-                      />
-                    ),
-                    href: "https://linkedin.com/in/vignesh-chinnasamy-0058a7238",
-                  },
-                  {
-                    icon: (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
-                      />
-                    ),
-                    href: "https://github.com/",
-                  },
-                ].map((social, i) => (
-                  <a
-                    key={i}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 glass rounded-xl hover:bg-accent-primary/10 hover:border-accent-primary/30 transition-all duration-200 group"
-                  >
-                    <svg
-                      className="w-5 h-5 text-text-secondary group-hover:text-accent-primary"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      {social.icon}
-                    </svg>
-                  </a>
-                ))}
-              </div>
-            </div>
+              Get in touch
+            </a>
+            <a
+              href="#about"
+              className="px-8 py-3 glass rounded-xl font-medium text-text-primary hover:text-accent-cyan transition-all duration-200"
+            >
+              Learn more
+            </a>
           </div>
 
-          <div
-            className={`flex-1 flex justify-center transition-all duration-700 delay-200 ${
-              mounted
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-8"
-            }`}
-          >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-primary to-accent-cyan rounded-full blur-3xl opacity-30 animate-pulse" />
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-bg-card glow-primary">
-                <img
-                  src="/vick.jpg"
-                  alt="Vignesh"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg-primary/50 to-transparent" />
-              </div>
-              <div className="absolute -bottom-4 -right-4 px-4 py-2 glass rounded-xl">
-                <span className="text-accent-emerald text-sm font-medium flex items-center gap-2">
-                  <span className="w-2 h-2 bg-accent-emerald rounded-full animate-pulse" />
-                  Available for work
-                </span>
-              </div>
-            </div>
+          <div className="flex gap-6 mt-10 justify-center">
+            {[
+              {
+                icon: (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z M4 6a2 2 0 100-4 2 2 0 000 4z"
+                  />
+                ),
+                href: "https://linkedin.com/in/vignesh-chinnasamy-0058a7238",
+              },
+              {
+                icon: (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                  />
+                ),
+                href: "https://github.com/",
+              },
+            ].map((social, i) => (
+              <a
+                key={i}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 glass rounded-xl hover:bg-accent-primary/10 hover:border-accent-primary/30 transition-all duration-200 group"
+              >
+                <svg
+                  className="w-5 h-5 text-text-secondary group-hover:text-accent-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  {social.icon}
+                </svg>
+              </a>
+            ))}
           </div>
         </div>
       </div>
