@@ -22,7 +22,7 @@ const education = [
 ];
 
 export default function About() {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {

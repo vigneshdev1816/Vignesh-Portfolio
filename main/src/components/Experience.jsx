@@ -35,7 +35,7 @@ const certifications = [
 ];
 
 export default function Experience() {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function Contact() {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef(null);
   const [visible, setVisible] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -28,7 +28,7 @@ export default function Contact() {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
     setTimeout(() => {

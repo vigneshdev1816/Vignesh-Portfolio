@@ -39,7 +39,7 @@ const skills = [
 ];
 
 export default function Skills() {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
