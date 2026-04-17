@@ -89,8 +89,7 @@ export default function Hero() {
         </div>
         
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-          <div className="flex flex-col items-center gap-2 text-zinc-500">
-            <span className="text-xs tracking-widest uppercase">Scroll</span>
+          <div className="flex flex-col items-center gap-2 text-zinc-500">  
             <div className="w-6 h-10 rounded-full border-2 border-zinc-700 flex justify-center pt-2">
               <div className="w-1 h-2 bg-zinc-500 rounded-full animate-bounce" />
             </div>
