@@ -30,7 +30,6 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <a href="#home" className="text-2xl font-bold tracking-tight">
             <span className="gradient-text">Vignesh</span>
-            <span className="text-white"> Portfolio</span>
           </a>
 
           <div className="hidden md:flex items-center gap-1">
