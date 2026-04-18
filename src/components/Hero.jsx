@@ -26,7 +26,7 @@ export default function Hero() {
               <div className="relative">
                 <img 
                   src="/vick.jpg" 
-                  alt="Vignesh Chinnasamy" 
+                  alt="Vignesh" 
                   className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-white/20 shadow-2xl grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
                 />
                 <div className="absolute bottom-3 right-3 w-5 h-5 bg-emerald-500 rounded-full border-4 border-[#030014] animate-pulse" />
@@ -46,7 +46,7 @@ export default function Hero() {
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight">
             <span className="text-white">Hi, I'm </span>
-            <span className="gradient-text">Vignesh Chinnasamy</span>
+            <span className="gradient-text">Vignesh</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-zinc-400 mb-6 max-w-2xl mx-auto">
