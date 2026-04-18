@@ -5,7 +5,7 @@ const education = [
     institution: "Kings Engineering College",
     degree: "B.E. CSE (AI & DS)",
     score: "CGPA 7.90",
-    year: "2021 - Present",
+    year: "2021 - 2025",
   },
   {
     institution: "Sriram Matric Hr Sec School",

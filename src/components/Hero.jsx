@@ -26,7 +26,7 @@ export default function Hero() {
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
             <span className="text-white">Hi, I'm </span>
-            <span className="gradient-text">Vignesh</span>
+            <span className="gradient-text">Vignesh Chinnasamy</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-zinc-400 mb-8 max-w-2xl mx-auto">
@@ -85,14 +85,6 @@ export default function Hero() {
                 </svg>
               </a>
             ))}
-          </div>
-        </div>
-        
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-          <div className="flex flex-col items-center gap-2 text-zinc-500">  
-            <div className="w-6 h-10 rounded-full border-2 border-zinc-700 flex justify-center pt-2">
-              <div className="w-1 h-2 bg-zinc-500 rounded-full animate-bounce" />
-            </div>
           </div>
         </div>
       </div>
