@@ -4,8 +4,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col items-center text-center">
           <a href="#home" className="text-3xl font-bold tracking-tight mb-4">
-            <span className="gradient-text">V</span>
-            <span className="text-white">ignesh</span>
+            <span className="gradient-text">Vignesh</span>
+            <span className="text-white"> Portfolio</span>
           </a>
           
           <p className="text-zinc-500 mb-8 max-w-md">
