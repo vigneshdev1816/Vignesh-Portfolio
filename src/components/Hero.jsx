@@ -19,17 +19,30 @@ export default function Hero() {
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
         <div className={`text-center transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8">
+          
+          <div className="mb-8">
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-50 animate-pulse" />
+              <img 
+                src="/vick.jpg" 
+                alt="Vignesh Chinnasamy" 
+                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white/10 shadow-2xl"
+              />
+              <div className="absolute bottom-2 right-2 w-5 h-5 bg-emerald-500 rounded-full border-4 border-[#030014]" />
+            </div>
+          </div>
+          
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6">
             <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
             <span className="text-sm text-zinc-300">Available for new opportunities</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight">
             <span className="text-white">Hi, I'm </span>
             <span className="gradient-text">Vignesh Chinnasamy</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-zinc-400 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-zinc-400 mb-6 max-w-2xl mx-auto">
             A passionate <span className="gradient-text-alt font-semibold">Frontend Developer</span> crafting beautiful digital experiences
           </p>
           
