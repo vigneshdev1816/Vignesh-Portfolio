@@ -2,6 +2,14 @@ import { useEffect, useRef, useState } from "react";
 
 const projects = [
   {
+    title: "Expense Tracker – Money Management",
+    description:
+      "A practical web application designed to help users monitor and manage their daily finances efficiently. The system allows users to track income and expenses, categorize transactions, and maintain a clear overview of their financial status. It includes real-time balance updates, simple data visualization, and an intuitive interface for seamless user experience.",
+    tech: ["Finance", "Expense Tracking", "JavaScript", "UI/UX"],
+    color: "from-blue-500 to-cyan-500",
+    year: "2026",
+  },
+  {
     title: "AI-Powered Knowledge Management",
     description:
       "A sophisticated system leveraging NLP and Knowledge Graphs to organize and retrieve information efficiently. Features semantic search, automatic categorization, and intelligent recommendations.",
