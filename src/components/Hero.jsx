@@ -25,7 +25,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500 animate-pulse" />
               <div className="relative">
                 <img 
-                  src="/vick.jpg" 
+                  src="/photo.jpg" 
                   alt="Vignesh" 
                   className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-white/20 shadow-2xl grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
                 />
