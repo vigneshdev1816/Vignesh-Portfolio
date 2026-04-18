@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <a href="#home" className="text-2xl font-bold tracking-tight">
-            <span className="gradient-text">Vignesh</span>
+            <span className="gradient-text">Vignesh Chinnasamy</span>
           </a>
 
           <div className="hidden md:flex items-center gap-1">
