@@ -20,15 +20,22 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
         <div className={`text-center transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           
-          <div className="mb-8">
-            <div className="relative inline-block">
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-50 animate-pulse" />
-              <img 
-                src="/vick.jpg" 
-                alt="Vignesh Chinnasamy" 
-                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white/10 shadow-2xl"
-              />
-              <div className="absolute bottom-2 right-2 w-5 h-5 bg-emerald-500 rounded-full border-4 border-[#030014]" />
+          <div className="mb-10">
+            <div className="relative inline-block group">
+              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500 animate-pulse" />
+              <div className="relative">
+                <img 
+                  src="/vick.jpg" 
+                  alt="Vignesh Chinnasamy" 
+                  className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-white/20 shadow-2xl grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
+                />
+                <div className="absolute bottom-3 right-3 w-5 h-5 bg-emerald-500 rounded-full border-4 border-[#030014] animate-pulse" />
+              </div>
+              <div className="absolute -bottom-2 -right-2 w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
             </div>
           </div>
           
